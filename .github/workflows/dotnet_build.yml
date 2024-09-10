@@ -31,7 +31,7 @@ jobs:
         rm -rf ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish/appsettings.Docker.json
         rm -rf ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish/appsettings.Development.json
     - name: Upload output
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: "Build_Linux"
         path: ./SCHALE.GameServer/bin/Release/net8.0/linux-x64/publish
@@ -57,7 +57,7 @@ jobs:
         del ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish/appsettings.Docker.json
         del ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish/appsettings.Development.json
     - name: Upload output
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: "Build_Windows"
         path: ./SCHALE.GameServer/bin/Release/net8.0/win-x64/publish
